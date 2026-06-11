@@ -1,0 +1,16 @@
+{
+  "milestone_order": [
+    "order_processing_system",
+    "user_authentication_system"
+  ],
+  "failure_policies": {
+    "order_processing_system": {
+      "on_failure": "stop",
+      "max_retries": 3
+    },
+    "user_authentication_system": {
+      "on_failure": "stop",
+      "max_retries": 3
+    }
+  }
+}
